@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="D:\Pascal\bin\i386-Win32\fpc.exe" Date="1355043128"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhibq &quot;-FiD:\CodingShit\Project metode de rezolvare ecuatii\lib\i386-win32&quot; &quot;-FuD:\CodingShit\Project metode de rezolvare ecuatii\&quot; &quot;-FUD:\CodingShit\Project metode de rezolvare ecuatii\lib\i386-win32\&quot; &quot;-FED:\CodingShit\Project metode de rezolvare ecuatii\&quot; &quot;-oD:\CodingShit\Project metode de rezolvare ecuatii\MetBisectiei.exe&quot; MetBisectiei.pas"/>
+</CONFIG>

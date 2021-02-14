@@ -1,0 +1,116 @@
+<html>
+<title>Teorie</title>
+
+<body>
+    <ol>
+        <ul>
+            <li>
+                <b>Metoda analitic&#259;</b>
+                <br> Pentru separarea analitic&#259; a solu&#355;iilor vor fi folosite propriet&#259;&#355;ile
+                derivatei.
+                <br> Dac&#259; solu&#355;iile ecua&#355;iei f&acute;(x)=0 pot fi u&#351;or calculate, atunci, pentru a
+                separa solu&#355;iile f(x)=0, este necesar: <br>
+                1. s&#259; se determine solu&#355;iile distincte a &#8804; x1 &#8804; x2 &#8804; ..., &#8804; xn &#8804;
+                b ale ecua&#355;iei f&acute;(x)=0; <br>
+                2. consider&icirc;nd a = x0 &#351;i b = xn+1, s&#259; se calculeze valorile f(x0), f(x1), ..., f(xn+1).
+                <br>
+                Segmentele[xi, xi+1], i = 0, ..., n, pentru care f(xi) &times; f(xi+1) < 0 vor con&#355;ine c&icirc;te
+                    cel pu&#355;in o solu&#355;ie a ecua&#355;iei f(x)=0. </li>
+            <li>
+                <b>Metoda bisec&#539;iei</b>
+                <ol type="A">
+                    <li> Algoritmul de calcul pentru un num&#259;r prestabilit n de diviz&#259;ri consecutive:
+                        <ol>
+                            <li>Pasul 0. Ini&#355;ializare: i &#8656; 0.</li>
+                            <li>Pasul 1. Determinarea mijlocului segmentului c &#8656; (a+b)/2 .</li>
+                            <li>Pasul 2. Reducerea segmentului ce con&#355;ine solu&#355;ia: dac&#259; f(c) = 0,
+                                <br> atunci solu&#355;ia calculat&#259; este x = c. SF&Icirc;R&#350;IT.
+                                <br> &Icirc;n caz contrar, dac&#259; f(a) &times; f(c) > 0, atunci a &#8656; c; b
+                                &#8656; b, altfel a &#8656; a; b &#8656; c.
+                            </li>
+                            <li>Pasul 3. i &#8656; i + 1. Dac&#259; i = n, atunci solu&#355;ia calculat&#259; este .
+                                SF&Icirc;R&#350;IT.
+                                <br> &Icirc;n caz contrar, se revine la pasul 1.
+                            </li>
+
+                        </ol>
+                    </li>
+                    <li>Algoritmul de calcul pentru o precizie &#949; dat&#259;:
+                        <ol>
+                            <li>Pasul 1. Determinarea mijlocului segmentului c &#8656; (a+b)/2 .</li>
+                            <li>Pasul 2. Dac&#259; f(c) = 0, atunci solu&#355;ia calculat&#259; este x = c.
+                                SF&Icirc;R&#350;IT.
+                                <br> &Icirc;n caz contrar, dac&#259; f(a) &times; f(c) > 0, atunci a &#8656; c; b
+                                &#8656; b, altfel a &#8656; a; b &#8656; c.
+                            </li>
+                            <li>Pasul 3. Dac&#259; |b &ndash; a|< &#949;, atunci solu&#355;ia calculat&#259; este
+                                    x=(a+b)/c . SF&Icirc;R&#350;IT. <br> &Icirc;n caz contrar, se revine la pasul 1.
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <b>Metoda coardelor</b>
+                <ol type="A">
+                    <li> Algoritmul de calcul pentru un num&#259;r prestabilit n de aproxim&#259;ri succesive:</li>
+                    <ol>
+                        <li>Pasul 1. Determinarea extremit&#259;&#355;ii fixe e &#351;i a aproxim&#259;rii x0:
+                            <br> c &#8656; a - [f(a) / ( f(b)- f(a) )]* (b - a)
+                            <br> dac&#259; f(c) &times; f(a) < 0, atunci e &#8656; a, x0 &#8656; b, altfel e &#8656; b,
+                                x0 &#8656; a; i &#8656; 0.</li>
+                        <li>Pasul 2. Calculul x(i+1) conform formulei x(i+1) = x(i) - [f( x(i) ) / ( f(e)- f( x(i) ) )]*
+                            ( e - x(i) )</li>
+                        <li>Pasul 3. Dac&#259; i + 1 = n, atunci solu&#355;ia calculat&#259; x &#8656; x(i).
+                            SF&Icirc;R&#350;IT.
+                            <br> &Icirc;n caz contrar, i &#8656; i+1 &#351;i se revine la pasul 2.
+                        </li>
+                    </ol>
+                    <li> Algoritmul de calcul pentru o exactitate &#949; dat&#259;:</li>
+                    <ol>
+                        <li>Pasul 1.Determinarea extremit&#259;&#355;ii fixe e &#351;i a aproxim&#259;rii x0:
+                            <br>c &#8656; a - [f(a) / ( f(b)- f(a) )]* (b - a);
+                            <br> dac&#259; f(c) &times; f(a) < 0, atunci e &#8656; a, x0 &#8656; b, altfel e &#8656; b,
+                                x0 &#8656; a; i &#8656; 0.</li>
+                        <li>Pasul 2. Calculul x(i+1) conform formulei: x(i+1) = x(i) - [f( x(i) ) / ( f(e)- f( x(i) )
+                            )]* ( e - x(i) )</li>
+                        <li>Pasul 3. Dac&#259; |( M(1)-m(1) )/m(1)| * |x(i+1) - x(i)|< &#949;, atunci solu&#355;ia
+                                calculat&#259; x &#8656; xi . SF&Icirc;R&#350;IT. <br> &Icirc;n caz contrar, i &#8656;
+                                i+1 &#351;i se revine la pasul 2.
+                        </li>
+                    </ol>
+                </ol>
+            </li>
+            <li><b>Metoda Newton</b>
+                <ol type="A">
+                    <li>Algoritmul de calcul pentru un num&#259;r dat de aproxim&#259;ri succesive:</li>
+                    <ol>
+                        <li>Pasul 1. Determinarea aproxim&#259;rii ini&#355;iale x0: c &#8656; a - [f(a) / ( f(b)- f(a)
+                            )]* (b - a)
+                            <br> dac&#259; f(c) &times; f(a) < 0, atunci x0 &#8656; a, altfel x0 &#8656; b; i &#8656;
+                                0.</li>
+                        <li>Pasul 2. Se calculeaz&#259; x(i+1) conform formulei x(i+1)=x(i) - f(xi)/f'(xi) </li>
+                        <li>Pasul 3. Dac&#259; i+1 = n, atunci solu&#355;ia calculat&#259; x &#8656; x(i+1).
+                            SF&Icirc;R&#350;IT.
+                            <br> &Icirc;n caz contrar, i &#8656; i+1, apoi se revine la pasul 2.
+                        </li>
+                    </ol>
+                    <li> Algoritmul de calcul pentru o exactitate &#949; dat&#259;:</li>
+                    <ol>
+                        <li>Pasul 1. Determinarea aproxim&#259;rii ini&#355;iale x0: c &#8656; a - [f(a) / ( f(b)- f(a)
+                            )]* (b - a)
+                            <br> dac&#259; f(c) &times; f(a) < 0, atunci x0 &#8656; a, altfel x0 &#8656; b; i &#8656;
+                                0.</li>
+                        <li>Pasul 2. Se calculeaz&#259; x(i+1) conform formulei x(i+1)=x(i) - f(xi)/f'(xi) </li>
+                        <li>Pasul 3. Dac&#259; [ M(2) / 2m(1) ] *[ x(i+1) - x(i) ]^2 < &#949;, atunci solu&#355;ia
+                                calculat&#259; x &#8656; xi+1. SF&Icirc;R&#350;IT. <br> &Icirc;n caz contrar, i &#8656;
+                                i+1 &#351;i se revine la pasul 2.</li>
+                    </ol>
+                </ol>
+            </li>
+        </ul>
+    </ol>
+    <a href="Pagina de titlu.html">&Icirc;napoi </a>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="MetCoardelor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="41" Y="17"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="C:\Users\Valeriu\Downloads\separare.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="8" Y="10"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="MetCoardelor.pas"/>
+        <Caret Line="7"/>
+      </Position1>
+      <Position2>
+        <Filename Value="MetCoardelor.pas"/>
+        <Caret Line="6" Column="14"/>
+      </Position2>
+      <Position3>
+        <Filename Value="MetCoardelor.pas"/>
+        <Caret Line="19" Column="9"/>
+      </Position3>
+      <Position4>
+        <Filename Value="MetCoardelor.pas"/>
+        <Caret Line="7" Column="29"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
